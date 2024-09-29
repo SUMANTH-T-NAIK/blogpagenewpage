@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="edit-profile.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Personal Blog</h1>
+            <ul>
+                <li><a href="home.html">Blog Posts</a></li>
+                <li><a href="new-post.html">New Post</a></li>
+                <li><a href="profile.html" class="active">My Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Edit Profile</h2>
+        <form id="editProfileForm">
+            <label for="user-name">Name:</label>
+            <input type="text" id="user-name" required>
+
+            <label for="user-mobile">Mobile No:</label>
+            <input type="text" id="user-mobile" required>
+
+            <label for="user-email">Email:</label>
+            <input type="email" id="user-email" required>
+
+            <label for="user-dob">Date of Birth:</label>
+            <input type="date" id="user-dob" required>
+
+            <button type="button" id="save-button">Save Changes</button>
+            <button type="button" id="cancel-button">Cancel</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Personal Blog</p>
+    </footer>
+
+    <script type="module" src="edit-profile.js"></script>
+</body>
+</html>

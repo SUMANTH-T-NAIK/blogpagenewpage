@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Post</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Personal Blog</h1>
+            <ul>
+                <li><a href="home.html">Blog Posts</a></li>
+                <li><a href="new-post.html" class="active">New Post</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="new-post">
+        <h2>Create New Post</h2>
+        <form id="newPostForm">
+            <label for="post-title">Title:</label>
+            <input type="text" id="post-title" required>
+
+            <label for="post-content">Content:</label>
+            <textarea id="post-content" rows="5" required></textarea>
+
+            <button type="submit">Publish</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Personal Blog</p>
+    </footer>
+
+    <script type="module" src="new-post.js"></script>
+</body>
+</html>
